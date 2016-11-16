@@ -1,0 +1,119 @@
+
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+
+\newcommand{\tab}{\hspace{5mm}}
+\input{tcilatex}
+
+\begin{document}
+
+
+
+Fine structure constant:
+
+$\alpha =\dfrac{e^{2} }{\left( 4\pi \varepsilon _{0} \right) \hbar c} $%
+Length:\newline
+Bohr radius:
+
+\begin{eqnarray*}
+a_{0} & = & \left( 4\pi \varepsilon _{0} \right) \dfrac{\hbar ^{2} }{m_{e}
+e^{2} } \\
+& = & \left[ \left( \dfrac{4\pi \varepsilon _{0} }{e^{2} } \right) \hbar c%
+\right] \dfrac{\hbar }{m_{e} c} \\
+& = & \dfrac{1}{\alpha } \left( \dfrac{\hbar }{m_{e} c} \right)
+\end{eqnarray*}
+CityplaceCompton wavelength:
+
+$\lambdabar _{c} =\alpha a_{0} $Classical radius of the electron:
+
+$R_{e} \approx \alpha ^{2} a_{0} $Bohr energy:
+
+\begin{eqnarray*}
+E_{n} & = & -\dfrac{1}{2} \left( \dfrac{e^{2} }{4\pi \varepsilon _{0} }
+\right) ^{2} \left( \dfrac{m_{e} }{\hbar ^{2} } \right) \left( \dfrac{1}{%
+n^{2} } \right) \\
+& = & \left( \dfrac{e^{2} }{4\pi \varepsilon _{0} } \right) \left( \dfrac{1}{%
+2n^{2} a_{0} } \right) \\
+& = & -\dfrac{1}{2n^{2} } \alpha ^{2} m_{e} c^{2}
+\end{eqnarray*}
+Bohr magneton:
+
+$\mu _{B} =\dfrac{e\hbar }{2m_{e} } $
+
+Commutators:
+
+
+\begin{equation*}
+p\rightarrow \frac{\hbar }{i} \frac{d}{dx} \qquad\quad\;\;x\rightarrow -%
+\frac{\hbar }{i} \frac{d}{dp} 
+\end{equation*}
+
+\begin{equation*}
+\left( \Delta A\right) ^{2} \left( \Delta B\right) ^{2} \geq -\frac{1}{4}
+\left\langle \left[ A,B\right] \right\rangle ^{2} 
+\end{equation*}%
+\newpage Harmonic oscillator:
+
+\begin{equation*}
+\alpha =\sqrt{\frac{m\omega }{\hbar } } 
+\end{equation*}
+\begin{gather*}
+\hat{a} =\dfrac{1}{\sqrt{2} } \left( \alpha \hat{x} +i\dfrac{1}{\alpha \hbar 
+} \hat{p} \right) =\text{lowering} \;\;\&\;\;\hat{a} ^{\dag } =\dfrac{1}{%
+\sqrt{2} } \left( \alpha \hat{x} -i\dfrac{1}{\alpha \hbar } \hat{p} \right) =%
+\text{raising} \\
+\hat{x} =\dfrac{1}{\sqrt{2} \alpha } \left( \hat{a} +\hat{a} ^{\dag }
+\right) \;\;\&\;\;\hat{p} =-i\dfrac{\alpha \hbar }{\sqrt{2} } \left( \hat{a}
+-\hat{a} ^{\dag } \right)
+\end{gather*}
+
+$\hat{a} \left. n \right\rangle =\sqrt{n} \left. n-1 \right\rangle \;\;\&\;\;%
+\hat{a} ^{\dag } \left. n \right\rangle =\sqrt{\left( n+1\right) } \left.
+n+1 \right\rangle $ $\left[ \hat{a} ,\hat{a} ^{\dag } \right] =1$ $\hat{H}
+=\hbar \omega \left( \hat{a} ^{\dag } \hat{a} +\dfrac{1}{2} \right) $ $\left[
+\hat{H} ,\hat{a} \right] =-\hbar \omega \hat{a} \quad\;\;\,\left[ \hat{H} ,%
+\hat{a} ^{\dag } \right] =\hbar \omega \hat{a} ^{\dag } $Let $\hat{x} =%
+\dfrac{1}{\alpha } \hat{X} \;\;\&\;\;\hat{p} =\alpha \hbar \hat{P} $Which
+leads to
+
+$\hat{a} =\dfrac{1}{\sqrt{2} } \left( \hat{X} +i\hat{P} \right) \;\;\&\;\;%
+\hat{a} ^{\dag } =\dfrac{1}{\sqrt{2} } \left( \hat{X} -i\hat{P} \right) $Also
+
+$\hat{x} =\dfrac{1}{\sqrt{2} \alpha } \left( \hat{a} +\hat{a} ^{\dag }
+\right) \;\;\&\;\;\hat{p} =-i\dfrac{\alpha \hbar }{\sqrt{2} } \left( \hat{a}
+-\hat{a} ^{\dag } \right) $and
+
+$\hat{X} =\dfrac{1}{\sqrt{2} } \left( \hat{a} +\hat{a} ^{\dag } \right)
+\;\;\&\;\;\hat{P} =\dfrac{-i}{\sqrt{2} } \left( \hat{a} -\hat{a} ^{\dag }
+\right) $Heisenberg picture -- harmonic oscillator:
+
+\begin{eqnarray*}
+\hat{x} \left( t\right) & = & \hat{x} \left( 0\right) \cos \omega t+\dfrac{%
+\hat{p} \left( 0\right) }{m\omega } \sin \omega t \\
+& = & \hat{x} \left( 0\right) \cos \omega t+\left( \dfrac{1}{\alpha ^{2}
+\hbar } \right) \hat{p} \left( 0\right) \sin \omega t \\
+\hat{p} \left( t\right) & = & \hat{p} \left( 0\right) \cos \omega t-m\omega 
+\hat{x} \left( 0\right) \sin \omega t \\
+& = & \hat{p} \left( 0\right) \cos \omega t-\left( \alpha ^{2} \hbar \right) 
+\hat{x} \left( 0\right) \sin \omega t
+\end{eqnarray*}
+
+\begin{gather*}
+\text{For\ the\ normalized\ Gaussian} \\
+\psi \left( x\right) =\dfrac{\sqrt{\beta } }{\pi ^{1/4} } e^{-\beta ^{2}
+x^{2} /2} \quad\;\;\Delta x=\dfrac{1}{\sqrt{2} \beta } \;\;\Rightarrow
+\;\;\psi \left( x\right) =\dfrac{1}{\pi ^{1/4} } \left( \dfrac{1}{2^{1/4} 
+\sqrt{\Delta x} } \right) e^{-x^{2} /\left( 4\Delta x^{2} \right) } \\
+\text{For\ the\ Fourier\ transform\ of\ } \psi \left( x\right) \text{\
+which\ is} \\
+\phi \left( p\right) =\dfrac{1}{\pi ^{1/4} \sqrt{\beta \hbar } } e^{-p^{2}
+/\left( 2\beta ^{2} \hbar ^{2} \right) } \quad\;\;\Delta p=\dfrac{1}{\sqrt{2}
+} \beta \hbar \;\;\Rightarrow \;\;\phi \left( p\right) =\dfrac{1}{\pi ^{1/4} 
+} \left( \dfrac{1}{2^{1/4} \sqrt{\Delta p} } \right) e^{-p^{2} /\left(
+4\Delta p^{2} \right) }
+\end{gather*}
+
+\end{document}

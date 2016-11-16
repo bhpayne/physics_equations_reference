@@ -1,0 +1,263 @@
+\documentclass[12pt]{article}  %,twocolumn is too scrunched. decrease margin, increase column seperation
+
+%%% 
+%%% Composition of formulas for MST Qualifyin Exam
+%%% All mistakes are mine, all work is cited by Author
+%%% Creative Commons:
+%%% Attribution-Noncommercial-Share Alike 3.0 Unported
+%%% http://creativecommons.org/licenses/by-nc-sa/3.0/
+%%% 
+
+\usepackage{verbatim} % multi-line comments
+\usepackage[pdftitle={equations for the qualifying exam}, pdfauthor={Ben Payne}, pdfsubject={equations}, pdfkeywords={maxwell, lagrange}]{hyperref}
+\usepackage{times}
+
+% AMS packages and font files
+\usepackage{amsmath} % necessary for gathered equations
+\usepackage{amsfonts}
+%% For figures
+%\usepackage[dvipdfm,colorlinks=true]{hyperref}
+\usepackage[dvips]{graphicx}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{setspace}
+
+% screws up the paragraph formatting
+%\raggedright
+
+% margins must be 1 inch:
+%\begin{comment}
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+%\end{comment}
+
+%% Commonly used macros
+% from https://facetsproject.org/facets/browser/trunk/docs/gsdocs/nondimtf2hall.tex
+\newcommand{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pfraca}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\pfracb}[2]{\partial #1/\partial #2}
+
+\begin{document}
+%\twocolumn
+\title{Physics equations}
+\author{Ben~Payne\footnote{Electronic address: ben.is.located@gmail.com}}
+%\affiliation{Department~of~Physics, Missouri~University~of~Science~\&~Technology, Rolla,~MO~65409}
+\date{\today}
+
+\thispagestyle{empty}  % hides page number of the title page
+\pagestyle{empty} % no page numbers on the following pages
+%\begin{abstract}
+%equations for the qualifying exam
+%\end{abstract}
+
+version 0.03, 20090512
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{unit conversion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%see http://en.wikibooks.org/wiki/LaTeX/Tables
+%for help with tables
+
+see http://physics.nist.gov/cuu/Units/units.html and \cite{ZemanskyYoungGen} page T-5 \\
+
+\begin{tabular}{lcccc}
+Description                    & Name    & Symbol   & convert          & SI \\
+\hline
+\\[0.1pt]
+Force                          & Newton  & N        &                   & $\frac{m \ kg}{s^2}$  \\
+\\[0.1pt]
+energy, work, quantity of heat & joule   & J        & $N \ m$            & $\frac{m^2 \ kg}{s^2}$ \\
+\\[0.1pt]
+power                          & Watt    & W        & $\frac{J}{s}$      & $\frac{m^2 \ kg}{s^3}$ \\
+\\[0.1pt]
+pressure, stress               & pascal  & Pa       & $\frac{N}{m^2}$    & $\frac{kg}{m \ s^2}$ \\
+\\[0.1pt]
+electric charge, 
+quantity of electricity        & coulomb & C        &                   & $s \ A$ \\ % amp/second?
+\\[0.1pt]
+electric potential difference,
+electromotive force            & volt    & V        & W/A  % J/C?           & $\frac{m^2 \ kg}{s^3 \ A}$ \\
+\\[0.1pt]
+capacitance                    & farad   & F        & C/V             & $\frac{s^4 \ A^2}{m^2 \ kg}$ \\
+\\[0.1pt]
+electric resistance            & ohm     & $\Omega$ & V/A             & $\frac{m^2 \ kg}{s^3 \ A^2}$ \\
+\\[0.1pt]
+magnetic field                 & Tesla   & T        & $\frac{V \ s}{m}$  % N/(A m)? & $\frac{m \ kg}{s^2 \ A}$ \\
+\end{tabular}
+
+\ \\
+
+$1 \text{Joule} = 6.24150974 \ 10^{18}$ electron volts
+
+\ \\
+$k_{Boltzmann} T_{room} = \frac{1}{40}$ eV
+
+\ \\
+$T_{room} = 293.15 K$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{constants}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+see http://en.wikipedia.org/wiki/Physical\_constant and  http://physics.nist.gov/cuu/Constants/
+
+\ \\
+
+Universal constants : \\
+
+\begin{tabular}{lcr}
+Description                       & Symbol                  & SI value \\
+\hline
+\\[0.1pt]
+speed of light in vacuum          & c                       & $299 792 458 \ \frac{m}{s}$ \\
+\\[0.1pt]
+Newtonian constant of gravitation & G                       & $6.67428(67) \ 10^{−11} \frac{m^3}{kg \ s^2}$ \\
+\\[0.1pt]
+Planck's constant                 & h                       & $6.626 068 96(33) \ 10^{−34} \  J \ s$ \\
+\\[0.1pt]
+reduced Planck constant           & $\hbar = \frac{h}{2 \pi}$ & $1.054 571 628(53) \ 10^{−34} \ J \ s$ \\
+\end{tabular}
+
+\ \\ 
+
+\begin{tabular}{lcr}
+Description                             & Symbol, definition                         & SI value \\
+\hline
+\\[0.1pt]
+magnetic constant (vacuum permeability) & $\mu_0$                                    & $4 \pi \ 10^{−7} \frac{N}{A^2}$ \\
+\\[0.1pt]
+electric constant (vacuum permittivity) & $\epsilon_0 = \frac{1}{\mu_0 c^2}$         & $8.854 187 817 \ 10^{−12} \ \frac{F}{m}$ \\
+\\[0.1pt]
+elementary charge                       & $e$                                       & $1.602 176 487(40) \ 10^{−19} \ C$ \\
+\\[0.1pt]
+Bohr radius                             & $a_0 = \frac{\alpha}{4 \pi R_\infty}$      & $0.529 177 2108(18) \ 10^{−10} \ m$ \\
+\\[0.1pt]
+classical electron radius               & $r_e = \frac{e^2}{4\pi\epsilon_0 m_e c^2}$ & $2.817 940 2894(58) \ 10^{−15} \ m$ \\
+\\[0.1pt]
+electron mass                           & $m_e$                                      & $9.109 382 15(45) \ 10^{−31} \ kg = 511 \frac{KeV}{c^2}$  \\
+\\[0.1pt]
+fine-structure constant                 &$ \alpha = \frac{\mu_0 e^2 c}{2 h} = 
+                                          \frac{e^2}{4 \pi \epsilon_0 \hbar c}$     & $7.297 352 5376(50) \ 10^{−3}$ \\
+proton mass                             & $m_p $                                     & $1.672 621 637(83) \ 10^{−27} \ kg$ \\
+\\[0.1pt]
+Rydberg constant                        & $R_\infty = \frac{\alpha^2 m_e c}{2 h}  $        & $10 973 731.568 525(73) \ \frac{1}{m}$ \\
+\\[0.1pt]
+atomic mass unit 
+\\[0.1pt]
+(unified atomic mass unit)              & $m_u = \frac{1}{u} $                             & $1.660 538 86(28) \ 10^{−27} \ kg$ \\
+\\[0.1pt]
+Avogadro's number                       & $N_{Av}$                                   & $6.022 1415(10) \ 10^{23} \ \frac{1}{mol}$ \\
+\\[0.1pt]
+Boltzmann constant                      & $k_{B} = \frac{R}{N_{Av}} $                         & $1.380 6505(24) \ 10^{−23} \ \frac{J}{K}$ \\
+\\[0.1pt]
+gas constant                            & $R$                                        & $8.314 472(15) \ \frac{J}{K \ mol}$ \\
+\\[0.1pt]
+standard atmosphere                     & $atm$                                      & $101 325 \ Pa = 14.7 \ Psi $
+\end{tabular}
+\ \\
+Miscellaneous: 
+\begin{equation}
+ 1 \ eV = 1.602 \ 10^{-19} J
+\end{equation}
+
+standard temperature is $293.15 \ K$
+
+\begin{equation}
+ \frac{m_{proton}}{m_e} = 1836
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Symbol notations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+See page 631-642 of \cite{ReifThermo}
+
+$C_v \equiv$ specific heat for constant volume
+
+$k_b \equiv$ Boltzmann constant
+
+$\vec{E} \equiv$ electric field
+
+$\vec{B} \equiv$ magnetic field
+
+$\vec{D} \equiv$ electric displacement, equ 4.21, page 175 \cite{GriffithED}
+
+$\vec{N} \equiv$ torque
+
+$W \equiv$ work
+
+$\vec{v} \equiv$ velocity
+
+$V \equiv$ electrostatic potential [Volts]
+
+$V \equiv$ volume
+
+$U \equiv$ potential energy [Volts]
+
+$\vec{P} \equiv$ polarization, page 166 \cite{GriffithED}
+
+$I \equiv$ current [Amps]
+
+$\vec{F} \equiv$ force [Newtons, $\frac{kg \cdot m}{s^2}$]
+
+$E \equiv$ energy
+
+$T \equiv$ kinetic energy
+
+$T \equiv$ temperature
+
+$L \equiv$ lagrangian
+
+$L \equiv$ capacitance
+
+$\vec{L} \equiv$ classical (orbital) angular momentum
+
+$l \equiv$ quantum (orbital) angular momentum
+
+$\vec{p} \equiv$ linear momentum
+
+$\omega \equiv$ angular frequency
+
+$z \equiv$ single particle partition function
+
+$Z \equiv$ total partition function
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{99}
+
+\bibitem{ZemanskyYoungGen}
+Sears, Zemansky, Young \textit{University Physics, Fifth edition}, (1976)
+
+\bibitem{GriffithED}
+Griffith \textit{Intro to Electrodynamics}, (1999)
+
+\bibitem{JacksonED}
+Jackson \textit{Classical Electrodynamics}, (1999)
+
+\bibitem{GoldsteinCM}
+Goldstein \textit{Classical Mechanics}, (1980) (second edition)\\
+Available from Aaron
+
+\bibitem{ReifThermo}
+Reif \textit{Fundamentals of statistical and thermal physics}, (1965)
+
+\bibitem{ParrisQM}
+Parris's book on \textit{Quantum mechanics}, (2008) \\
+\htmladdnormallink{463 course page}{http://physics.mst.edu/classes/class_463notes.html}
+
+\bibitem{LiboffQM}
+Liboff \textit{Introduction to Quantum mechanics}, (2003) Fourth edition
+
+\bibitem{MarionCM}
+Marion \textit{Classical Dynamics of Particles and systems}, (1970) Second edition. \\
+Available from Prof Waddill, Elizabeth
+
+\bibitem{TiplerMP}
+Tipler, Llewellyn \textit{Modern Physics}, (1999)
+
+\end{thebibliography}
+
+\end{document}

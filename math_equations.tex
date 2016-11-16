@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}  %,twocolumn is too scrunched. decrease margin, increase column seperation
+
+%%% 
+%%% Composition of formulas for MST Qualifyin Exam
+%%% All mistakes are mine, all work is cited by Author
+%%% Creative Commons:
+%%% Attribution-Noncommercial-Share Alike 3.0 Unported
+%%% http://creativecommons.org/licenses/by-nc-sa/3.0/
+%%% 
+
+\usepackage{verbatim} % multi-line comments
+\usepackage[pdftitle={equations for the qualifying exam}, pdfauthor={Ben Payne}, pdfsubject={equations}, pdfkeywords={maxwell, lagrange}]{hyperref}
+\usepackage{times}
+
+% AMS packages and font files
+\usepackage{amsmath} % necessary for gathered equations
+\usepackage{amsfonts}
+%% For figures
+%\usepackage[dvipdfm,colorlinks=true]{hyperref}
+\usepackage[dvips]{graphicx}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{setspace}
+
+% screws up the paragraph formatting
+%\raggedright
+
+% margins must be 1 inch:
+%\begin{comment}
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+%\end{comment}
+
+%% Commonly used macros
+% from https://facetsproject.org/facets/browser/trunk/docs/gsdocs/nondimtf2hall.tex
+\newcommand{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\secpfrac}[2]{\frac{\partial ^2 #1}{\partial #2 ^2}}
+\newcommand{\pfraca}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\secpfraca}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\pfracb}[2]{\partial #1/\partial #2}
+
+\begin{document}
+%\twocolumn
+\title{Physics equations}
+\author{Ben~Payne\footnote{Electronic address: ben.is.located@gmail.com}}
+%\affiliation{Department~of~Physics, Missouri~University~of~Science~\&~Technology, Rolla,~MO~65409}
+\date{\today}
+
+\thispagestyle{empty}  % hides page number of the title page
+\pagestyle{empty} % no page numbers on the following pages
+%\begin{abstract}
+%equations for the qualifying exam
+%\end{abstract}
+
+version 0.01, 20090408
+
+
+"del" operator $\nabla$ has different names, depending on how it is applied.
+
+gradient: $\nabla f$
+
+divergence: $\nabla \cdot f$
+
+curl: $\nabla \times f$
+
+\subsection{math 402}
+
+\begin{equation}
+ e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
+\end{equation}
+
+\begin{equation}
+ f(\vec{r}_0 + \Delta \vec{r})=e^{\Delta \vec{r} \cdot \vec{\nabla}} f(\vec{r}) | _{\vec{r}=\vec{r}_0} = 
+\sum_{m=0}^{\infty} \frac{(\Delta \vec{r} \cdot \vec{\nabla})^m}{m!} f(\vec{r}) | _{\vec{r}=\vec{r}_0}
+\end{equation}
+
+Einstein summation notation (relies on covarient versus contravarient notation)
+\begin{equation}
+ \vec{A} \times \vec{B} = \epsilon^{ijk} \hat{x}_i A_j B_k
+\end{equation}
+
+\begin{equation}
+ \epsilon^{lmn} \epsilon_{ljk} = \delta_{mj} \delta_{nk} - \delta_{mk} \delta_{nj}
+\end{equation}
+
+Dr Hale's favorite formula:
+\begin{equation}
+ df = d\vec{r} \cdot \vec{\nabla}f
+\end{equation}
+
+\subsection{partial differential equations}
+
+\begin{equation}
+ \nabla^2 = \secpfraca{\rho} + \frac{1}{\rho} \pfraca{\rho} + \frac{1}{\rho^2} \secpfraca{\phi} + \secpfraca{z}
+\end{equation}
+
+
+
+most are given in 2D, but are applicable to nD 
+
+Laplace's equation
+\begin{equation}
+ \secpfrac{u}{x} + \secpfrac{u}{y} =0
+\end{equation}
+more simply for n dimensions
+\begin{equation}
+ \nabla^2 u = 0
+\end{equation}
+Wave equation
+\begin{equation}
+ \secpfrac{u}{x} - \secpfrac{u}{y} = 0
+\end{equation}
+Heat equation
+\begin{equation}
+ \secpfrac{u}{x} - \pfrac{u}{y} = 0
+\end{equation}
+Poisson equation
+\begin{equation}
+ \secpfrac{u}{x} + \secpfrac{u}{y} = g(x,y)
+\end{equation}
+more simply for n dimensions
+\begin{equation}
+ \nabla^2 u = g(x,y)
+\end{equation}
+
+
+\end{document}

@@ -1,0 +1,332 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+                                                                                                    
+                                                                                                    
+\newcommand{\tab}{\hspace{5mm}}
+
+
+\begin{document}
+
+
+M-List
+
+
+\begin{center}
+Mechanics
+
+
+\end{center}
+
+
+Lagrange's Equations with Undetermined Multipliers:
+
+
+\[\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q} _{j} } \right)
+-\frac{\partial L}{\partial q_{j} } =\sum\limits_{k}\lambda _{k} \left(
+t\right) \frac{\partial f_{k} }{\partial q_{j} }  
+\]
+
+
+\[ \;\;;\;\;\dot{p}
+_{j} \equiv \frac{\partial L}{\partial q_{j} } 
+\] \begin{gather*}
+ \\
+ \\
+-\frac{\partial H}{\partial t} =\frac{\partial L}{\partial t} 
+\end{gather*}
+
+Orbit equation for a known orbit 
+
+\[r=r\left( \theta \right) 
+
+
+
+\[\frac{d^{2} }{d\theta ^{2} } \left( \frac{1}{r} \right) +\frac{1}{r}
+=-\frac{\mu r^{2} }{l^{2} } F\left( r\right) 
+\]where 
+\[\mu \equiv \frac{m_{1} m_{2} }{m_{1} +m_{2} } 
+\], and 
+\[l\equiv \mu r^{2} \dot{\theta } =\text{constant} 
+\]
+
+
+\[E=\frac{1}{2} \mu \dot{r} ^{2} +\frac{1}{2} \frac{l^{2} }{\mu r^{2} }
++U\left( r\right) 
+\]
+\begin{center}
+Electrodynamics
+
+
+\end{center}
+
+:
+
+
+\[
+
+Electric field of a system of point charges:
+
+
+\[\vec{E} \left( \vec{r} \right) =\frac{1}{4\pi \epsilon _{0} }
+\sum\limits_{i=1}^{n}\frac{q_{i} }{r_{i} ^{2} }  \hat{r} _{i} 
+\]
+Electric field for charge distributions:
+
+
+\[\vec{E} \left( \vec{r} \right) =\frac{1}{4\pi \epsilon _{0} } \int
+\frac{\rho \left( \vec{r} ^{'} \right) }{r^{2} }  \hat{r} d\tau ^{'} 
+\]
+Gauss's Law:
+
+
+\[\Phi _{E} =\int\limits_{S}\vec{E} \cdot d\vec{a}  =\frac{1}{\epsilon _{0}
+} Q_{enc} 
+\]
+\[\Phi _{B} =\oint\nolimits_{S}\vec{B} \cdot d\vec{a}
+=\oint\nolimits_{S}\nabla \times \vec{A} \cdot d\vec{a}
+=\oint\nolimits_{C}\vec{A} \cdot d\vec{l}    
+\]
+Solution to placeLaplace's Equation in spherical coordinates 
+with no 
+$\phi $ dependence:
+
+
+\[V\left( r,\theta \right) =\sum\limits_{l=0}^{\infty }\left( A_{l} r^{l}
++B_{l} r^{-\left( l+1\right) } \right)  P_{l} \left( \cos \theta \right) 
+\]
+Solution to placeLaplace's Equation in cylindrical coordinates:
+
+
+\[V\left( \rho ,\phi \right) =D_{0} +C_{0} \ln \rho
++\sum\limits_{n=1}^{\infty }\left[ A_{n} \cos \left( n\phi \right) +B_{n}
+\sin \left( n\phi \right) \right]  \left( C_{n} \rho ^{-n} +D_{n} \rho
+^{n} \right) 
+\]
+Maxwell's Equations: \\
+In general:
+
+
+\[\nabla \cdot \vec{E} =\frac{1}{\epsilon _{0} } \rho 
+\]
+\[\nabla \times \vec{E} =-\frac{\partial \vec{B} }{\partial t} 
+\]
+\[\nabla \cdot \vec{B} =0
+\]
+\[\nabla \times \vec{B} =\mu _{0} \vec{J} +\mu _{0} \epsilon _{0}
+\frac{\partial \vec{E} }{\partial t} 
+\]
+ In matter:
+
+
+\[\nabla \cdot \vec{D} =\rho _{f} 
+\]
+\[\nabla \times \vec{E} =-\frac{\partial \vec{B} }{\partial t} 
+\]
+\[\nabla \cdot \vec{B} =0
+\]
+\[\nabla \times \vec{H} =\vec{J} _{f} +\frac{\partial \vec{D} }{\partial t} 
+\]
+Potentials:
+
+
+\[\vec{E} =-\nabla V-\frac{\partial \vec{A} }{\partial t} 
+\], 
+\[\vec{B} =\nabla \times \vec{A} 
+\]
+
+
+Lorentz force law:
+
+
+\[\vec{F} =q\left( \vec{E} +\vec{v} \times \vec{B} \right) 
+\]\newpage
+
+\begin{center}
+Quantum Mechanics
+
+
+\end{center}
+
+Classical Hamiltonian:
+
+
+\[H\left( x,p\right) =\frac{p^{2} }{2m} +V\left( x\right) 
+\]
+for QM:
+
+
+\[p\rightarrow \frac{\hbar }{i} \left( \frac{\partial }{\partial x} \right)
+\quad;\;\,x\rightarrow -\frac{\hbar }{i} \left( \frac{\partial }{\partial
+p} \right) 
+\]
+\[\hat{H} =-\frac{\hbar ^{2} }{2m} \frac{\partial ^{2} }{\partial x^{2} }
++V\left( x\right) 
+\] $\hat{H} \psi =E\psi $
+Particle in a box of length L, 0\texttt{<}x\texttt{<}L:
+
+
+\[\frac{d^{2} \psi }{dx^{2} } =-k^{2} \psi 
+\], 
+\[k^{2} =\frac{2mE}{\hbar } 
+\]
+
+
+\[\psi _{n} \left( x\right) =A\sin \left( \frac{n\pi x}{L} \right) 
+\], 
+\[A=\sqrt{\frac{2}{L} } 
+\]
+
+
+\[E_{n} =\frac{n^{2} \pi ^{2} \hbar ^{2} }{2mL^{2} } 
+\]
+Particle in a box of length a, 
+
+\[-\frac{a}{2} <x<\frac{a}{2} 
+\]:
+
+
+\[\frac{d^{2} \psi }{dx^{2} } =-k^{2} \psi 
+\]\tab \tab 
+\[k^{2} =\frac{2mE}{\hbar } 
+\]\tab 
+\[A=\sqrt{\frac{2}{L} } 
+\]
+\[\psi _{n} \left( x\right) =A\cos \left( \frac{n\pi x}{a} \right) 
+\]\tab for odd n\tab 
+
+
+\[\psi _{n} \left( x\right) =A\sin \left( \frac{n\pi x}{a} \right) 
+\] for even n
+
+
+QM harmonic oscillator:
+
+
+\[a^{\dagger } \left| \right\rangle u_{n} =\sqrt{n+1} \left| \right\rangle
+u_{n+1} 
+\]
+\[a^{} \left| \right\rangle u_{n} =\sqrt{n} \left| \right\rangle u_{n-1} 
+\]
+\[a^{\dagger } =\sqrt{\frac{m\omega }{2\hbar } } x-i\frac{p}{\sqrt{2m\hbar
+\omega } } 
+\]
+\[a^{} =\sqrt{\frac{m\omega }{2\hbar } } x+i\frac{p}{\sqrt{2m\hbar \omega }
+} 
+\]
+\[a^{\dagger } +a^{} =\sqrt{\frac{2m\omega }{\hbar } } x
+\], let 
+\[\alpha =\sqrt{\frac{m\omega }{\hbar } } 
+\]
+
+
+\[x=\dfrac{1}{\sqrt{2} \alpha } \left( a^{\dagger } +a\right) 
+\]
+Time-independent perturbation theory:
+
+
+\[E_{n}^{1} =\left\langle \psi _{n}^{0} \left| H^{'} \right| \right. \left.
+\psi _{n}^{0} \right\rangle 
+\] (first order correction to energy)
+
+
+Commutators:
+
+
+
+\[\left[ x,p\right] =i\hbar 
+\]
+
+\[p\rightarrow \frac{\hbar }{i} \frac{d}{dx} \qquad\quad\;\;x\rightarrow
+-\frac{\hbar }{i} \frac{d}{dp} 
+\]
+
+\[\left( \Delta A\right) ^{2} \left( \Delta B\right) ^{2} \geq -\frac{1}{4}
+\left\langle \left[ A,B\right] \right\rangle ^{2} 
+\]Harmonic oscillator: 
+
+\[\alpha =\sqrt{\frac{m\omega }{\hbar } } 
+\]
+
+
+\begin{gather*}
+\hat{a} =\dfrac{1}{\sqrt{2} } \left( \alpha \hat{x} +i\dfrac{1}{\alpha
+\hbar } \hat{p} \right) \;\;\&\;\;\hat{a} ^{\dag } =\dfrac{1}{\sqrt{2} }
+\left( \alpha \hat{x} -i\dfrac{1}{\alpha \hbar } \hat{p} \right)  \\
+\hat{x} =\dfrac{1}{\sqrt{2} \alpha } \left( \hat{a} +\hat{a} ^{\dag }
+\right) \;\;\&\;\;\hat{p} =-i\dfrac{\alpha \hbar }{\sqrt{2} } \left(
+\hat{a} -\hat{a} ^{\dag } \right) 
+\end{gather*}
+
+$\left[ \hat{a} ,\hat{a} ^{\dag } \right] =1$
+$\hat{H} =\hbar \omega \left( \hat{a} ^{\dag } \hat{a} +\dfrac{1}{2}
+\right) $Let 
+$\hat{x} =\dfrac{1}{\alpha } \hat{X} \;\;\&\;\;\hat{p} =\alpha \hbar
+\hat{P} $Which leads to
+
+
+$\hat{a} =\dfrac{1}{\sqrt{2} } \left( \hat{X} +i\hat{P} \right)
+\;\;\&\;\;\hat{a} ^{\dag } =\dfrac{1}{\sqrt{2} } \left( \hat{X} -i\hat{P}
+\right) $Also
+
+
+$\hat{x} =\dfrac{1}{\sqrt{2} \alpha } \left( \hat{a} +\hat{a} ^{\dag }
+\right) \;\;\&\;\;\hat{p} =-i\dfrac{\alpha \hbar }{\sqrt{2} } \left(
+\hat{a} -\hat{a} ^{\dag } \right) $and
+
+
+$\hat{X} =\dfrac{1}{\sqrt{2} } \left( \hat{a} +\hat{a} ^{\dag } \right)
+\;\;\&\;\;\hat{P} =\dfrac{-i}{\sqrt{2} } \left( \hat{a} -\hat{a} ^{\dag }
+\right) $
+\[E_{n}^{2} =\sum\limits_{m\neq n}\frac{\left| \left\langle \psi _{m}^{0}
+\right| H^{'} \left| \right\rangle \psi _{n}^{0} \right| ^{2} }{E_{n}^{0}
+-E_{m}^{0} }  
+\] (second order correction to energy)
+
+
+\[\psi _{n}^{1} =\sum\limits_{m\neq n}\frac{\left\langle \psi _{m}^{0}
+\left| H^{'} \right| \left. \psi _{n}^{0} \right\rangle \right. }{\left(
+E_{n}^{0} -E_{m}^{0} \right) }  \psi _{m}^{0} 
+\] (first order correction to the wave function\\
+
+
+
+\begin{center}
+Modern Physics
+
+
+\end{center}
+
+Relativity:
+
+
+\[\gamma =\frac{1}{\sqrt{1-\frac{v^{2} }{c^{2} } } } =\frac{1}{\sqrt{1-\beta
+^{2} } } ,\beta =\frac{v}{c} 
+\]
+\[t^{'} =\gamma \left( t-\frac{v}{c^{2} } x\right) 
+\]
+\[x^{'} =\gamma \left( x-vt\right) 
+\]$m=\gamma m_{0} $
+\[E=mc^{2} =\gamma m_{0} c^{2} 
+\]
+\[E^{2} =p^{2} c^{2} +m_{0}^{2} c^{4} 
+\]$E=KE+m_{0} c^{2} $
+\[KE=\left( \gamma -1\right) m_{0} c^{2} 
+\]$p=\gamma m_{0} v$
+\[L=\frac{L_{0} }{\gamma } 
+\]
+Hydrogen Atom:
+
+
+\[E_{n} =\frac{-13.6eV}{n^{2} } =\frac{-1}{n^{2} } Ryd
+\]
+
+Treat excited one-electron atoms like Hydrogen, but include the 
+effective charge, Z:
+
+
+\[E_{n} =\frac{-13.6*Z^{2} }{n^{2} } =E_{n} (H_{2} )*Z^{2} 
+\]
+
+
+\end{document}

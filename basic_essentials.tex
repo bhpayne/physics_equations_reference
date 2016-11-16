@@ -1,0 +1,82 @@
+\documentclass[12pt]{report} 
+%\usepackage[pdftex]{hyperref}
+\usepackage{amsmath} % advanced math
+\usepackage{amssymb}
+\usepackage{ulem}
+\usepackage{graphicx,color}
+%\usepackage{subfigure}
+\usepackage{verbatim} % multi-line comments
+\usepackage[backref, colorlinks=false, pdftitle={20110125}, 
+pdfauthor={Ben Payne, Alexey Yamilov}, pdfsubject={meeting}, 
+pdfkeywords={localization, gain, transmission, random, media}]{hyperref}
+%\usepackage{hyperref} % hyper links
+%I'd like to use "backpageref" instead of linking back to section numbers
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\newcounter{fignum}
+\newcommand{\fignum}{\stepcounter{fignum}\arabic{fignum}}
+\begin{document}
+\section{Gaussian and SI}
+\begin{tabular}{c c | c c}
+Gaussian (``CGS'') & & SI & \\
+cm, gram, second & & m, kg, second &\\\hline
+&&&\\
+$\vec{\nabla} \times \vec{E} = -\frac{1}{c} \frac{\partial \vec{B}}{\partial t}$ & $\vec{\nabla} \times \vec{H} = \frac{1}{c} \frac{\partial \vec{D}}{\partial t} + \frac{4\pi}{c}\vec{J}$ & $\vec{\nabla} \times \vec{E} = -\frac{1}{c} \frac{\partial \vec{B}}{\partial t}$ & $\vec{\nabla} \times \vec{H} = \frac{\partial \vec{D}}{\partial t} + \vec{J}$ \\
+&&&\\
+$\vec{\nabla} \cdot \vec{D} = 4 \pi \rho $ & $\vec{\nabla} \cdot \vec{B}=0$ & $\vec{\nabla} \cdot \vec{D} = \rho $ & $\vec{\nabla} \cdot \vec{B}=0$ \\
+&&&\\\hline
+&&&\\
+$\vec{F} = q \left(\vec{E} + \frac{1}{c}\vec{v}\times \vec{B}\right)$ & & $\vec{F} = q \left(\vec{E} + \vec{v}\times \vec{B}\right)$ & \\ 
+&&&\\\hline
+&&&\\
+$\vec{D} \equiv \vec{E} + 4\pi \vec{P}$ & $\vec{H} \equiv \vec{B}-4\pi \vec{\mu}$ & $\vec{D} \equiv \epsilon_0\ \vec{E} + \vec{P}$ & $ \vec{H} = \frac{1}{\mu_0} \vec{B} - \vec{\mu}$ \\
+\end{tabular}
+
+\ \\
+
+Conversion factors between Gaussian, SI. Usage: $X_{Gaussian} = k_X X_{SI}$
+
+\ \\
+\begin{tabular}{c c c}
+$k_{\vec{D}} = \sqrt{4\pi/\epsilon_0}$ & $k_{\vec{H}} = \sqrt{4 \pi \mu_0}$ & $k_{\rho} = k_{\vec{J}} = k_{\vec{P}} = 1/\sqrt{4 \pi \epsilon_0}$\\
+&& \\
+$k_{\vec{E}} = \sqrt{4 \pi \epsilon_0}$ & $k_{\vec{B}} = \sqrt{4 \pi /\mu_0}$ & $k_{\mu} = \sqrt{\mu_0/(4 \pi)}$ \\
+\end{tabular}
+
+\ \\
+
+For dimensions, $k_{length} = 100$. $k_{mass}=1000$.
+\ \\
+
+
+\begin{equation}
+ \epsilon_0 \mu_0 = \frac{1}{c^2}
+\end{equation}
+\begin{equation}
+ \mu_0 = 4 \pi \cdot 10^{-7}
+\end{equation}
+
+\section{basics}
+\begin{equation}
+ E = h\ f = \frac{h\ c}{\lambda}  
+\end{equation}
+\begin{equation}
+ F = -G \frac{m_1\ m_2}{r^2}
+\end{equation}
+Explain the following momentum relation physically
+\begin{equation}
+ p = \hbar k =mv
+\end{equation}
+Explain the following relation between flux and velocity physically
+\begin{equation}
+ \vec{J} = n \vec{v}
+\end{equation}
+\begin{equation}
+ KE = \frac{1}{2} m v^2 \quad \quad \quad PE = mgh
+\end{equation}
+
+
+
+\end{document}
